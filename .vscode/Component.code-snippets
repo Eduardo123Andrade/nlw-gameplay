@@ -1,0 +1,18 @@
+{
+	"React Native Component": {
+		"scope": "javascript, typescriptreact",
+		"prefix": "CompReactNative",
+		"body": [
+			"import React from 'react'",
+			"import { $1 } from 'react-native'",
+			"",
+			"export const $2 = () => {",
+			"    return (",
+			"        <$1>",
+			"        </$1>",
+			"    )",
+			"}"
+		],
+		"description": "Mininum React Native Component"
+	}
+}
