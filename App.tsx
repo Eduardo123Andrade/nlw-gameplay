@@ -1,6 +1,7 @@
 import React from 'react'
 import { StatusBar } from 'react-native'
 import { Background } from './src/components/Background'
+import { AuthProvider } from './src/context/auth'
 import { Routes } from './src/routers'
 
 export const App = () => {
@@ -11,7 +12,9 @@ export const App = () => {
         backgroundColor="transparent"
         translucent
       />
-      <Routes />
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>
     </Background>
   )
 }
