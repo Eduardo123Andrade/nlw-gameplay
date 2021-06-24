@@ -35,8 +35,7 @@ const appointments = [
 		category: '1',
 		date: '22/06 às 20:40h',
 		description: 'É hoje que vamos chegar ao challenger sem perder uma partida da md10'
-	}
-
+	},
 ]
 
 
@@ -69,26 +68,25 @@ export const Home = () => {
 					setCategory={handleCategorySelect}
 				/>
 
-				<View style={Styles.content}>
-					<ListHeader
-						title="Partidas agendadas"
-						subtitle="Total 6"
-					/>
-					<FlatList
-						data={appointments}
-						keyExtractor={item => item.id}
-						style={Styles.matches}
-						showsVerticalScrollIndicator={false}
-						ItemSeparatorComponent={() => <ListDivider />}
-						renderItem={({ item }) => (
-							<Appointment
-								data={item}
-								onPress={handleAppointmentDetails}
-							/>
-						)}
-					/>
+				<ListHeader
+					title="Partidas agendadas"
+					subtitle="Total 6"
+				/>
+				<FlatList
+					data={appointments}
+					keyExtractor={item => item.id}
+					style={Styles.matches}
+					showsVerticalScrollIndicator={false}
+					contentContainerStyle={{ paddingBottom: 69}}
+					ItemSeparatorComponent={() => <ListDivider />}
+					renderItem={({ item }) => (
+						<Appointment
+							data={item}
+							onPress={handleAppointmentDetails}
+						/>
+					)}
+				/>
 
-				</View>
 			</View>
 		</Background>
 	)

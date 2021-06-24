@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native'
-import { GuildIcon } from '../../screens/GuildIcon'
+import { GuildIcon } from '../GuildIcon'
 import { Styles } from './styles'
 
 import Feather from 'react-native-vector-icons/Feather'

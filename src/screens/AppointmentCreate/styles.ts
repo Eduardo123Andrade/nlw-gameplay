@@ -40,9 +40,10 @@ export const Styles = StyleSheet.create({
     image: {
         width: 64,
         height: 68,
-        backgroundColor: colors.secondary50,
+        backgroundColor: colors.secondary40,
         borderWidth: 1,
         borderRadius: 8,
+        borderColor: colors.secondary50
     },
     field: {
         width: '100%',
@@ -68,7 +69,6 @@ export const Styles = StyleSheet.create({
     footer: {
         marginVertical: 20,
         marginBottom: 56
-
     }
 
 })

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FlatList, View } from 'react-native'
-import { Guild, GuildProps } from '../Guild'
-import { ListDivider } from '../ListDivider'
+import { Guild, GuildProps } from '../../components/Guild'
+import { ListDivider } from '../../components/ListDivider'
 import { Styles } from './styles'
 
 const guilds: GuildProps[] = [
@@ -30,7 +30,9 @@ export const Guilds = ({ handleGuildSelect }: Props) => {
                 data={guilds}
                 style={Styles.guilds}
                 showsVerticalScrollIndicator={false}
-                ItemSeparatorComponent={() => <ListDivider />}
+                contentContainerStyle={{ paddingBottom: 69, paddingTop: 103 }}
+                ListHeaderComponent={() => <ListDivider isCentered />}
+                ItemSeparatorComponent={() => <ListDivider isCentered />}
                 keyExtractor={item => item.id}
                 renderItem={({ item }) => (
                     <Guild

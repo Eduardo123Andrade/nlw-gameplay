@@ -19,6 +19,5 @@ export const Styles = StyleSheet.create({
         backgroundColor: colors.secondary30,
         alignSelf: 'center',
         marginTop: 13,
-        marginBottom: 103
     }
 })
